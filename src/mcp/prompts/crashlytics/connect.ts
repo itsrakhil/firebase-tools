@@ -6,7 +6,7 @@ export const connect = prompt(
   {
     name: "connect",
     omitPrefix: false,
-    description: "Access a Firebase application's Crashlytics data.",
+    description: "Use this command to access a Firebase application's Crashlytics data.",
     annotations: {
       title: "Access Crashlytics data",
     },

@@ -40,11 +40,7 @@ export const get_report = tool(
   {
     name: "get_report",
     description:
-      `**REQUIRED PREREQUISITE:** READ firebase://guides/app_id, firebase://guides/crashlytics/reports, and firebase://guides/crashlytics/issues.
-      **DO NOT FETCH DATA FIRST. IT WILL CAUSE ERRORS AND WASTE TOKENS AND TIME. READING THE GUIDES IS THE MOST EFFICIENT WAY TO GET THE ANSWERS YOU WANT.**
-      AGENTS MUST READ these guides to fetch, format, and interpret report results or TOOL CALLS WILL FAIL.
-
-      Use this to request numerical reports from Crashlytics.
+      `Use this to request numerical reports from Crashlytics. The result aggregates the sum of events and impacted users, grouped by a dimension appropriate for that report. Agents must read the [Firebase Crashlytics Reports Guide](firebase://guides/crashlytics/reports) using the \`firebase_read_resources\` tool before calling to understand criticial prerequisites for requesting reports and how to interpret the results.
     `.trim(),
     inputSchema: ReportInputSchema,
     annotations: {
